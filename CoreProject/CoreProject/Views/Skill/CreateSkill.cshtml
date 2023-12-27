@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "CreateSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Ekle</h3>
+    <br />
+    <form class="form-group" method="post">
+        <label>Yetenek</label>
+        <input type="text" name="Title" class="form-control" />
+        <br />
+        <label>Değer</label>
+        <input type="text" name="Value" class="form-control" />
+        <br />
+        <a asp-controller="Skill" asp-action="Index" class="btn btn-primary">Liste</a>
+        <button class="btn btn-success">Ekle</button>
+    </form>
+</div>
