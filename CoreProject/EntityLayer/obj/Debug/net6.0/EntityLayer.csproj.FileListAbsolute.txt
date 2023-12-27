@@ -12,3 +12,4 @@ C:\Users\Excalibur\Desktop\CoreProject\CoreProject\EntityLayer\obj\Debug\net6.0\
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\Excalibur\Desktop\CoreProject\CoreProject\EntityLayer\obj\Debug\net6.0\EntityLayer.sourcelink.json

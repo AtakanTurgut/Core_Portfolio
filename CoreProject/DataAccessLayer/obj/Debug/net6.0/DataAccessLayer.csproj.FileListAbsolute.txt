@@ -15,3 +15,4 @@ C:\Users\Excalibur\Desktop\CoreProject\CoreProject\DataAccessLayer\bin\Debug\net
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\Excalibur\Desktop\CoreProject\CoreProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.sourcelink.json
