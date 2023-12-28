@@ -1,0 +1,39 @@
+﻿@model EntityLayer.Concrete.Portfolio
+
+@{
+    ViewData["Title"] = "CreatePortfolio";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Proje Listesi</h3>
+            </div>
+            <br />
+            <div class="container">
+                <form class="form-group" method="post">
+                    <label class="text-white">Proje</label>
+                    <input type="text" name="Name" class="form-control" />
+                    <br />
+                    <label class="text-white">Görsel1</label>
+                    <input type="text" name="ImageUrl1" class="form-control" />
+                    <br />
+                    <label class="text-white">Görsel2</label>
+                    <input type="text" name="ImageUrl2" class="form-control" />
+                    <br />
+                    <label class="text-white">Proje Url</label>
+                    <input type="text" name="ProjectUrl" class="form-control" />
+                    <br />
+                    <label class="text-white">Fiyat</label>
+                    <input type="text" name="Price" class="form-control" />
+                    <br />
+                    <a asp-controller="Portfolio" asp-action="Index" class="btn btn-primary">Liste</a>
+                    <button class="btn btn-success">Ekle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
