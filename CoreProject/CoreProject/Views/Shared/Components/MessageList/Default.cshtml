@@ -1,0 +1,53 @@
+﻿@using EntityLayer.Concrete
+@model List<UserMessage>
+
+<div class="card bg-default shadow">
+    <div class="row">
+        <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0 text-white">Mesajlar <small>(@ViewBag.msg)</small></h3>
+        </div>
+        <div class="col text-right mt-3 mx-3">
+            <a asp-controller="Portfolio" asp-action="Index" class="btn btn-sm btn-primary text-right">Görüntüle</a>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table align-items-center table-dark table-flush">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="sort" data-sort="name"></th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">
+
+                            <div class="media align-items-center">
+                                <div class="col-md-4">
+                                    <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="@item.Title">
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="text-white">@item.Title</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="text-white">@item.Date</span>
+                                </div>
+                            </div>
+                            <div class="media-body mt-2">
+                                <span class="name mb-0 text-sm">@item.User.Name @item.User.Surname</span>
+                            </div>
+                            <div class="media-body mt-2">
+                                <span class="name mb-0 text-sm">@item.Content</span>
+                            </div>
+
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

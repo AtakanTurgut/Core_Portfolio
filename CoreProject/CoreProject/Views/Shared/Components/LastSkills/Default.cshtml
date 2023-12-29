@@ -1,0 +1,52 @@
+﻿@using EntityLayer.Concrete
+@model List<Skill>
+
+<div class="card">
+    <div class="card-header border-0">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="mb-0">Yeteneklerim <small>(@ViewBag.skl)</small></h3>
+            </div>
+            <div class="col text-right">
+                <a asp-controller="Skill" asp-action="Index" class="btn btn-sm btn-primary">Görüntüle</a>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <!-- Projects table -->
+        <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" class="sort" data-sort="name">#</th>
+                    <th scope="col" class="sort" data-sort="budget">Başlık</th>
+                    <th scope="col" class="sort" data-sort="status">Oran</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">
+                            @item.SkillId
+                        </th>
+                        <td class="budget">
+                            @item.Title
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="completion mr-2">@item.Value%</span>
+                                <div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="@item.Value" aria-valuemin="0" aria-valuemax="100" style="width: @item.Value%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

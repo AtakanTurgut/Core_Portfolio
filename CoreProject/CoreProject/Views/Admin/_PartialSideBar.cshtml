@@ -4,7 +4,7 @@
         <!-- Nav items -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">
+                <a class="nav-link active" asp-controller="Dashboard" asp-action="Index">
                     <i class="ni ni-tv-2 text-primary"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
@@ -13,12 +13,6 @@
                 <a class="nav-link active" asp-controller="Feature" asp-action="Index">
                     <i class="ni ni-planet text-orange"></i>
                     <span class="nav-link-text">Öne Çıkanlar</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" asp-controller="Skill" asp-action="Index">
-                    <i class="ni ni-pin-3 text-primary"></i>
-                    <span class="nav-link-text">Yetenekler</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -34,8 +28,13 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" asp-controller="Skill" asp-action="Index">
+                    <i class="ni ni-pin-3 text-primary"></i>
+                    <span class="nav-link-text">Yetenekler</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" asp-controller="Portfolio" asp-action="Index">
-
                     <i class="ni ni-key-25 text-info"></i>
                     <span class="nav-link-text">Projeler</span>
                 </a>

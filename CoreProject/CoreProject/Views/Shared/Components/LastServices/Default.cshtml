@@ -1,0 +1,44 @@
+﻿@using EntityLayer.Concrete
+@model List<Service>
+
+<div class="card bg-default shadow">
+    <div class="row">
+        <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0 text-white">Hizmetlerim <small>(@ViewBag.srv)</small></h3>
+        </div>
+        <div class="col text-right mt-3 mx-3">
+            <a asp-controller="Service" asp-action="Index" class="btn btn-sm btn-primary text-right">Görüntüle</a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <!-- Projects table -->
+        <table class="table align-items-center table-dark table-flush">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="sort" data-sort="name">#</th>
+                    <th scope="col" class="sort" data-sort="budget">Başlık</th>
+                    <th scope="col" class="sort" data-sort="completion">Görseller</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="budget">
+                            @item.ServiceId
+                        </td>
+                        <td>
+                            @item.Title
+                        </td>
+                        <td>
+                            @item.ImageUrl
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</div>

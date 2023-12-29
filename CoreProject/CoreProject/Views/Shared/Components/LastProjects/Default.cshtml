@@ -1,0 +1,78 @@
+﻿@using EntityLayer.Concrete
+@model List<Portfolio>
+
+<div class="card bg-default shadow">
+    <div class="row">
+        <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0 text-white">Projelerim <small>(@ViewBag.prj)</small></h3>
+        </div>
+        <div class="col text-right mt-3 mx-3">
+            <a asp-controller="Portfolio" asp-action="Index" class="btn btn-sm btn-primary text-right">Görüntüle</a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <!-- Projects table -->
+        <table class="table align-items-center table-dark table-flush">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="sort" data-sort="name">#</th>
+                    <th scope="col" class="sort" data-sort="budget">Proje</th>
+                    <th scope="col" class="sort" data-sort="status">Ücret</th>
+                    <th scope="col">Durum</th>
+                    <th scope="col">Tamamlama Oranı</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="budget">
+                            @item.PortfolioId
+                        </td>
+                        <th scope="row">
+                            <div class="media align-items-center">
+                                <a href="#" class="avatar rounded-circle mr-3">
+                                    <img alt="Image placeholder" src="@item.Platform">
+                                </a>
+                                <div class="media-body">
+                                    <span class="name mb-0 text-sm">@item.Name</span>
+                                </div>
+                            </div>
+                        </th>
+                        <td class="budget">
+                            @item.Price ₺
+                        </td>
+                        <td>
+                            @if (item.Status)
+                            {
+                                <span class="badge badge-dot mr-4">
+                                    <i class="bg-success"></i>
+                                    <span class="status">Tamamlandı</span>
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge badge-dot mr-4">
+                                    <i class="bg-warning"></i>
+                                    <span class="status">Devam Ediyor</span>
+                                </span>
+                            }
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="completion mr-2">@item.Value%</span>
+                                <div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="@item.Value" aria-valuemin="0" aria-valuemax="100" style="width: @item.Value%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
