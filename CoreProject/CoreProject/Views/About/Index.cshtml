@@ -1,0 +1,40 @@
+﻿@model EntityLayer.Concrete.About
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Hakkımda Düzenle</h3>
+    <br />
+    @using (Html.BeginForm("Index", "About", FormMethod.Post))
+    {
+        @Html.HiddenFor(a => a.AboutId)
+
+        @Html.Label("Başlık")
+        @Html.TextBoxFor(a => a.Title, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextAreaFor(a => a.Description, 10, 3, new { @class = "form-control" })
+        <br />
+        <label>Yaş</label>
+        @Html.TextBoxFor(a => a.Age, new { @class = "form-control" })
+        <br />
+        <label>Mail</label>
+        @Html.TextBoxFor(a => a.Mail, new { @class = "form-control" })
+        <br />
+        <label>Telefon</label>
+        @Html.TextBoxFor(a => a.Phone, new { @class = "form-control" })
+        <br />
+        <label>Adres</label>
+        @Html.TextBoxFor(a => a.Address, new { @class = "form-control" })
+        <br />
+        <label>Resim</label>
+        @Html.TextBoxFor(a => a.ImageUrl, new { @class = "form-control" })
+        <br />
+        <a target="_blank" asp-controller="Default" asp-action="Index" class="btn btn-primary">Ana Sayfa</a>
+        <button class="btn btn-success">Güncelle</button>
+    }
+</div>
+

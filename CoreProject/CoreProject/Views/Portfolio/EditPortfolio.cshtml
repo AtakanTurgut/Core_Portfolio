@@ -1,0 +1,68 @@
+﻿@model EntityLayer.Concrete.Portfolio
+
+@{
+    ViewData["Title"] = "EditPortfolio";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Proje Gümcelle</h3>
+            </div>
+            <br />
+            <div class="container">
+                @using (Html.BeginForm("EditPortfolio", "Portfolio", FormMethod.Post))
+                {
+                    @Html.HiddenFor(p => p.PortfolioId)
+
+                    <label class="text-white">Proje</label>
+                    @Html.TextBoxFor(p => p.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.Name)
+                    <br />
+                    <label class="text-white">Görsel1</label>
+                    @Html.TextBoxFor(p => p.ImageUrl, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.ImageUrl)
+                    <br />
+                    <label class="text-white">Görsel2</label>
+                    @Html.TextBoxFor(p => p.ImageUrl2, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.ImageUrl2)
+                    <br />
+                    <label class="text-white">Proje Url</label>
+                    @Html.TextBoxFor(p => p.ProjectUrl, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(p => p.ProjectUrl)
+                    <br />
+                    @*
+                <label class="text-white">Resim1</label>
+                <input type="text" name="Image1" class="form-control" />
+                <br />
+                <label class="text-white">Resim2</label>
+                <input type="text" name="Image2" class="form-control" />
+                <br />
+                <label class="text-white">Resim3</label>
+                <input type="text" name="Image3" class="form-control" />
+                <br />
+                <label class="text-white">Resim4</label>
+                <input type="text" name="Image4" class="form-control" />
+                <br />
+                *@
+                    <label class="text-white">Platform</label>
+                    @Html.TextBoxFor(p => p.Platform, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Fiyat</label>
+                    @Html.TextBoxFor(p => p.Price, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Durum</label>
+                    @Html.TextBoxFor(p => p.Status, new { @class = "form-control" })
+
+                    <br />
+                    <a asp-controller="Portfolio" asp-action="Index" class="btn btn-primary">Liste</a>
+                    <button class="btn btn-success">Güncelle</button>
+                    <br />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

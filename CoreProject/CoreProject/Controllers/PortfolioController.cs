@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreProject.Controllers
@@ -35,9 +37,23 @@ namespace CoreProject.Controllers
             ViewBag.v1 = "Projeler";
             ViewBag.v2 = "Proje Ekle";
 
-            portfolioManager.TAdd(portfolio);
+            PortfolioValidator validations = new PortfolioValidator();
+            ValidationResult results = validations.Validate(portfolio);
 
-            return RedirectToAction("Index");
+            if (results.IsValid)
+            {
+                portfolioManager.TAdd(portfolio);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            return View();
         }
 
         public IActionResult DeletePortfolio(int id)
@@ -67,9 +83,24 @@ namespace CoreProject.Controllers
             ViewBag.v1 = "Projeler";
             ViewBag.v2 = "Proje Güncelle";
 
-            portfolioManager.TUpdate(portfolio);
+            PortfolioValidator validations = new PortfolioValidator();
+            ValidationResult results = validations.Validate(portfolio);
 
-            return RedirectToAction("Index");
+            if(results.IsValid) 
+            {
+                portfolioManager.TUpdate(portfolio);
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach(var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            return View();
         }
 
     }

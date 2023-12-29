@@ -10,7 +10,7 @@
     <br />
     @using (Html.BeginForm("EditExperience", "Experience", FormMethod.Post))
     {
-        @Html.HiddenFor(s => s.ExperienceId)
+        @Html.HiddenFor(e => e.ExperienceId)
 
         @Html.Label("Deneyim")
         @Html.TextBoxFor(e => e.Name, new { @class = "form-control" })

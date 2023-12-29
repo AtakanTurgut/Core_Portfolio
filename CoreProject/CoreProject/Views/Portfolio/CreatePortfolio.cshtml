@@ -9,22 +9,26 @@
     <div class="col">
         <div class="card bg-default shadow">
             <div class="card-header bg-transparent border-0">
-                <h3 class="text-white mb-0">Proje Listesi</h3>
+                <h3 class="text-white mb-0">Proje Ekle</h3>
             </div>
             <br />
             <div class="container">
                 <form class="form-group" method="post">
                     <label class="text-white">Proje</label>
                     <input type="text" name="Name" class="form-control" />
+                    @Html.ValidationMessageFor(p => p.Name)
                     <br />
                     <label class="text-white">Görsel1</label>
-                    <input type="text" name="ImageUrl1" class="form-control" />
+                    <input type="text" name="ImageUrl" class="form-control" />
+                    @Html.ValidationMessageFor(p => p.ImageUrl)
                     <br />
                     <label class="text-white">Görsel2</label>
                     <input type="text" name="ImageUrl2" class="form-control" />
+                    @Html.ValidationMessageFor(p => p.ImageUrl2)
                     <br />
                     <label class="text-white">Proje Url</label>
                     <input type="text" name="ProjectUrl" class="form-control" />
+                    @Html.ValidationMessageFor(p => p.ProjectUrl)
                     <br />
                     <label class="text-white">Fiyat</label>
                     <input type="text" name="Price" class="form-control" />

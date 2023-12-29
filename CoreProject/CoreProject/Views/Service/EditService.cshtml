@@ -1,0 +1,35 @@
+﻿@model EntityLayer.Concrete.Service
+
+@{
+    ViewData["Title"] = "EditService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Proje Gümcelle</h3>
+            </div>
+            <br />
+            <div class="container">
+                @using (Html.BeginForm("EditService", "Service", FormMethod.Post))
+                {
+                    @Html.HiddenFor(p => p.ServiceId)
+
+                    <label class="text-white">Hizmet</label>
+                    @Html.TextBoxFor(p => p.Title, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Görsel</label>
+                    @Html.TextBoxFor(p => p.ImageUrl, new { @class = "form-control" })
+                    <br />
+                    <a asp-controller="Service" asp-action="Index" class="btn btn-primary">Liste</a>
+                    <button class="btn btn-success">Güncelle</button>
+                    <br />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
