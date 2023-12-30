@@ -12,7 +12,7 @@ namespace CoreProject.ViewComponents.Dashboard
 
         public IViewComponentResult Invoke()
         {
-            var values = serviceManager.TGetList().TakeLast(7).ToList(); ;
+            var values = serviceManager.TGetList().TakeLast(7).ToList();
             ViewBag.srv = context.Services.Count();
 
             return View(values);

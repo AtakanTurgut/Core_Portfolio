@@ -1,0 +1,54 @@
+﻿@using EntityLayer.Concrete
+@model List<TodoList>
+
+<div class="card bg-default shadow">
+    <div class="row">
+        <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0 text-white">Yapılacaklar <small>(@ViewBag.td)</small></h3>
+        </div>
+    </div>
+
+    <div class="card-header bg-transparent border-0 mt--4">
+        <form class="form-group" method="post">
+            <div class="row">
+                <div class="col-sm-9">
+                    <input type="text" name="Content" class="form-control"  placeholder="Planını benimle paylaşabilirsin..."/>
+                </div>
+                <div class="col-sm-3">
+                    <a asp-controller="TodoList" asp-action="CreateTodoList" class="btn btn-success">Ekle</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="table-responsive mt--4">
+        <!-- Projects table -->
+        <table class="table align-items-center table-dark table-flush">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="sort" data-sort="name">Durum</th>
+                    <th scope="col" class="sort" data-sort="budget">Yapılacaklar</th>
+                    <th scope="col" class="sort" data-sort="completion">Kaldır</th>
+                </tr>
+            </thead>
+            <tbody class="list">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="budget">
+                            <input class="checkbox" type="checkbox" checked="@item.Status"/>
+                        </td>
+                        <td>
+                            @item.Content
+                        </td>
+                        <td>
+                            <a href="/TodoList/DeleteTodoList/@item.TodoId" class="btn btn-danger">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
