@@ -32,5 +32,23 @@ namespace CoreProject.Controllers
 
             return RedirectToAction("Index", "Dashboard");
         }
+
+        // GET
+        [HttpGet]
+        public IActionResult EditTodoList(int id)
+        {
+            var value = todoListManager.TGetById(id);
+
+            return RedirectToAction("Index", "Dashboard", value);
+        }
+
+        // POST
+        [HttpPost]
+        public IActionResult EditTodoList(TodoList todoList)
+        {
+            todoListManager.TUpdate(todoList);
+
+            return RedirectToAction("Index", "Dashboard");
+        }
     }
 }

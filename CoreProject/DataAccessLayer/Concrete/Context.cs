@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,12 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    //DbContext
+    public class Context : IdentityDbContext<ReUser, ReUserRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-R6K64T9\\SQLEXPRESS;database=CoreProjeDb;integrated security=true");
+            optionsBuilder.UseSqlServer("server=DESKTOP-R6K64T9\\SQLEXPRESS;database=CoreProjectDb;integrated security=true");
         }
 
         public DbSet<About> Abouts { get; set; }
@@ -28,6 +30,11 @@ namespace DataAccessLayer.Concrete
         public DbSet<User> Users { get; set; }
         public DbSet<UserMessage> UserMessages{ get; set; }
         public DbSet<TodoList> TodoLists{ get; set; }
+
+        /*
+        public DbSet<ReUser> ReUsers { get; set; }
+        public DbSet<ReUserRole> ReUserRoles { get; set; }
+        */
 
     }
 }

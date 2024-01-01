@@ -258,3 +258,5 @@ C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\bin\Debug\net6.0\
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\obj\Debug\net6.0\CoreProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll

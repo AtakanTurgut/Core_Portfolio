@@ -8,20 +8,22 @@
         </div>
     </div>
 
-    <div class="card-header bg-transparent border-0 mt--4">
-        <form class="form-group" method="post">
-            <div class="row">
-                <div class="col-sm-9">
-                    <input type="text" name="Content" class="form-control"  placeholder="Planını benimle paylaşabilirsin..."/>
+    @using (Html.BeginForm("CreateTodoList", "TodoList", FormMethod.Post))
+    {
+        <div class="card-header bg-transparent border-0 mt--4">
+            <form class="form-group">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <input type="text" name="Content" class="form-control" placeholder="Planını benimle paylaşabilirsin..." />
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-info">Ekle</button>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <a asp-controller="TodoList" asp-action="CreateTodoList" class="btn btn-success">Ekle</a>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="table-responsive mt--4">
+            </form>
+        </div>
+    }
+    <div class="table-responsive mt-2">
         <!-- Projects table -->
         <table class="table align-items-center table-dark table-flush">
             <thead class="thead-dark">
@@ -36,7 +38,11 @@
                 {
                     <tr>
                         <td class="budget">
-                            <input class="checkbox" type="checkbox" checked="@item.Status"/>
+                            @using (Html.BeginForm("EditTodoList", "TodoList", FormMethod.Post))
+                            {
+                                @Html.HiddenFor(modelItem => @item.TodoId)
+                                @Html.CheckBoxFor(modelItem => @item.Status, new { @class = "form-control", @id = "@item.TodoId" })
+                            }
                         </td>
                         <td>
                             @item.Content
