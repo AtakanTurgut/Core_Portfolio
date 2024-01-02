@@ -6,9 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<ReUser, ReUserRole>()
     .AddEntityFrameworkStores<Context>();
-builder.Services.AddDbContext<Context>();
 
 var app = builder.Build();
 

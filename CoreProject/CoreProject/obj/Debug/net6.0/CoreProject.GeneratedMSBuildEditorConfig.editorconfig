@@ -9,243 +9,251 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CoreProject
 build_property.RootNamespace = CoreProject
-build_property.ProjectDir = C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\
+build_property.ProjectDir = c:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject
+build_property.MSBuildProjectDirectory = c:\Users\Excalibur\Desktop\CoreProject\CoreProject\CoreProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Default/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Default/AnnouncementDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEZWZhdWx0XEFubm91bmNlbWVudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEZWZhdWx0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Login/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xMb2dpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Register/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xSZWdpc3RlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialFooter.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialHead.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialHead.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsSGVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialNavbar.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialNavigation.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsTmF2aWdhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialScript.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialScript.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsU2NyaXB0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialSideBar.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/User/_PartialSideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyXF9QYXJ0aWFsU2lkZUJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/_ViewImports.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Areas/User/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/About/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialFooter.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxGb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialHead.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialHead.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxIZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialNavbar.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxOYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialNavigation.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialNavigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxOYXZpZ2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialScript.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialScript.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxTY3JpcHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialSideBar.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Admin/_PartialSideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1BhcnRpYWxTaWRlQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Dashboard/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_HeaderPartial.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_HeaderPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxfSGVhZGVyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_NavbarPartial.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxfTmF2YmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_SendMessage.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Default/_SendMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxfU2VuZE1lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/CreateExperience.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/CreateExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZVxDcmVhdGVFeHBlcmllbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/EditExperience.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/EditExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZVxFZGl0RXhwZXJpZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Experience/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Feature/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Feature/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVhdHVyZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/CreatePortfolio.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/CreatePortfolio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXENyZWF0ZVBvcnRmb2xpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/EditPortfolio.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/EditPortfolio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEVkaXRQb3J0Zm9saW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Portfolio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/CreateService.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/CreateService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDcmVhdGVTZXJ2aWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/EditService.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/EditService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxFZGl0U2VydmljZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/AboutList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/AboutList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWJvdXRMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ContactDetails/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ContactDetails/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29udGFjdERldGFpbHNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ExperienceList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ExperienceList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXhwZXJpZW5jZUxpc3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/FeatureList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/FeatureList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmVhdHVyZUxpc3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/FeatureStatistics/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/FeatureStatistics/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmVhdHVyZVN0YXRpc3RpY3NcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastExperiences/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastExperiences/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdEV4cGVyaWVuY2VzXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastProjects/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastProjects/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdFByb2plY3RzXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastServices/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastServices/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdFNlcnZpY2VzXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastSkills/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/LastSkills/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFzdFNraWxsc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/MessageList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/MessageList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZUxpc3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/PortfolioList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/PortfolioList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUG9ydGZvbGlvTGlzdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/SendMessage/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/SendMessage/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VuZE1lc3NhZ2VcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ServiceList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/ServiceList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VydmljZUxpc3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/SkillList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/SkillList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2tpbGxMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/TestimonialList/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/TestimonialList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGVzdGltb25pYWxMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/TodoListPanel/Default.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Components/TodoListPanel/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9kb0xpc3RQYW5lbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Error.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_AdminLayout.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_UserLayout.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/CreateSkill.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/CreateSkill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxcQ3JlYXRlU2tpbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/EditSkill.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/EditSkill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxcRWRpdFNraWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/Index.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Skill/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/_ViewImports.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/_ViewStart.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_Layout.cshtml]
+[c:/Users/Excalibur/Desktop/CoreProject/CoreProject/CoreProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5tqo9x0wau

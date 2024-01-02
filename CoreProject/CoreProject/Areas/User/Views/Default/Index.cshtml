@@ -1,11 +1,16 @@
-﻿
+﻿@using EntityLayer.Concrete
+@model List<Announcement>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
+@{
+    string color = "";
+}
 
 <div class="card-header border-0">
-    <h3 class="mb-0">Deneyim Listesi</h3>
+    <h3 class="mb-0">Duyurular</h3>
 </div>
 <!-- Light table -->
 <div class="table-responsive">
@@ -14,42 +19,56 @@
             <tr>
                 <th scope="col" class="sort" data-sort="name">#</th>
                 <th scope="col" class="sort" data-sort="budget">Başlık</th>
-                <th scope="col" class="sort" data-sort="status">Tarih</th>
                 <th scope="col" class="sort" data-sort="name">Açıklama</th>
-                <th scope="col">Sil</th>
-                <th scope="col" class="sort" data-sort="completion">Düzenle</th>
+                <th scope="col" class="sort" data-sort="status">Tarih</th>
+                <th scope="col" class="sort" data-sort="status">Tür</th>
+                <th scope="col" class="sort" data-sort="status"></th>
                 <th scope="col"></th>
             </tr>
         </thead>
         <tbody class="list">
-            @*@foreach (var item in Model)
+            @foreach (var item in Model)
             {
+                @if (item.Status == "Yazı")
+                {
+                    color = "btn btn-warning text-white btn-sm";
+                }
+                @if (item.Status == "Proje")
+                {
+                    color = "btn btn-success text-white btn-sm";
+                }
+                @if (item.Status == "Konferans")
+                {
+                    color = "btn btn-info text-white btn-sm";
+                }
+                @if (item.Status == "Eğitim")
+                {
+                    color = "btn btn-danger text-white btn-sm";
+                }
                 <tr>
                     <th scope="row">
-                        @item.ExperienceId
+                        @item.AnnouncementId
                     </th>
                     <td class="budget">
-                        @item.Name
+                        @item.Title
                     </td>
                     <td>
-                        @item.Date
+                        @(((DateTime) @item.Date).ToString("dd-MM-yyyy"))
                     </td>
                     <td>
-                        @item.Description
+                        @item.Content
                     </td>
                     <td>
-                        <a href="/Experience/DeleteExperience/@item.ExperienceId" class="btn btn-danger">Sil</a>
+                        <label class="@color">@item.Status</label>
                     </td>
                     <td>
-                        <a href="/Experience/EditExperience/@item.ExperienceId" class="btn btn-primary">Güncelle</a>
+                        <a href="/User/Default/AnnouncementDetails/@item.AnnouncementId" class="btn btn-primary"> Detaylar</a>
                     </td>
-
                 </tr>
-            }*@
+            }
 
         </tbody>
     </table>
-    <a asp-controller="Experience" asp-action="CreateExperience" class="btn btn-success text-white">Deneyim Ekle</a>
 </div>
 
 

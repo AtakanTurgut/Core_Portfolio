@@ -53,7 +53,32 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("AboutId");
 
-                    b.ToTable("Abouts");
+                    b.ToTable("Abouts", (string)null);
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.Announcement", b =>
+                {
+                    b.Property<int>("AnnouncementId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnnouncementId"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AnnouncementId");
+
+                    b.ToTable("Announcements", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
@@ -81,7 +106,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ContactId");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Experience", b =>
@@ -106,7 +131,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ExperienceId");
 
-                    b.ToTable("Experiences");
+                    b.ToTable("Experiences", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Feature", b =>
@@ -128,7 +153,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("FeatureId");
 
-                    b.ToTable("Features");
+                    b.ToTable("Features", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Message", b =>
@@ -156,7 +181,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("MessageId");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Messages", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Portfolio", b =>
@@ -205,7 +230,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("PortfolioId");
 
-                    b.ToTable("Portfolios");
+                    b.ToTable("Portfolios", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.ReUser", b =>
@@ -334,7 +359,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ServiceId");
 
-                    b.ToTable("Services");
+                    b.ToTable("Services", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Skill", b =>
@@ -353,7 +378,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("SkillId");
 
-                    b.ToTable("Skills");
+                    b.ToTable("Skills", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.SocialMedia", b =>
@@ -378,7 +403,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("SocialMediaId");
 
-                    b.ToTable("SocialMedias");
+                    b.ToTable("SocialMedias", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Testimonial", b =>
@@ -406,7 +431,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("TestimonialId");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.TodoList", b =>
@@ -425,7 +450,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("TodoId");
 
-                    b.ToTable("TodoLists");
+                    b.ToTable("TodoLists", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.User", b =>
@@ -459,7 +484,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.UserMessage", b =>
@@ -489,7 +514,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserMessages");
+                    b.ToTable("UserMessages", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

@@ -45,7 +45,7 @@ namespace CoreProject.Areas.User.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Login");
+                    return RedirectToAction("Login", "User");
                 }
                 else
                 {

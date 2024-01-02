@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OOg4DLRk6X3EkF59fbYsn3Yg4KIiH/KPveon8yDdB0I=",
+  "Hash": "9mKxc89Ru26hmJ+zCkp+po4AUF+PDfpr4Dh0OAGaJoQ=",
   "Source": "CoreProject",
   "BasePath": "_content/CoreProject",
   "Mode": "Default",
@@ -60188,6 +60188,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Template\\scripts\\purecounter.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\9e568a59-543f-4ccc-838c-b247546f0560.png",
+      "SourceId": "CoreProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\",
+      "BasePath": "_content/CoreProject",
+      "RelativePath": "userImage/9e568a59-543f-4ccc-838c-b247546f0560.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userImage\\9e568a59-543f-4ccc-838c-b247546f0560.png"
     }
   ]
 }
