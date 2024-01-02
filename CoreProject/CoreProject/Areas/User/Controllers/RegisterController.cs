@@ -23,7 +23,7 @@ namespace CoreProject.Areas.User.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(new UserRegisterViewModel());
         }
 
         // POST
@@ -54,8 +54,10 @@ namespace CoreProject.Areas.User.Controllers
                         ModelState.AddModelError("", item.Description);
                     }
                 }
-            }
+            }            
+
             return View(model);
         }
     }
 }
+//123456Aa+
