@@ -1,0 +1,50 @@
+﻿@model EntityLayer.Concrete.GenericMessage
+
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Mesaj Detayları</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+            <tr>
+                <td scope="row">
+                    <form class="form-group">
+                        @Html.HiddenFor(x => x.GenericMessageId)
+
+                        @Html.Label("Mesaj No")
+                        @Html.TextBoxFor(x => x.GenericMessageId, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Gönderen Adı")
+                        @Html.TextBoxFor(x => x.SenderName, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Gönderen Mail")
+                        @Html.TextBoxFor(x => x.Sender, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Konu")
+                        @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Mesaj İçeriği")
+                        @Html.TextAreaFor(x => x.Content, 10, 5, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Tarih")
+                        @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+                    </form>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+

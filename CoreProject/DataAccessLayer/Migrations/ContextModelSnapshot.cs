@@ -53,7 +53,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("AboutId");
 
-                    b.ToTable("Abouts", (string)null);
+                    b.ToTable("Abouts");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Announcement", b =>
@@ -78,7 +78,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("AnnouncementId");
 
-                    b.ToTable("Announcements", (string)null);
+                    b.ToTable("Announcements");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Contact", b =>
@@ -106,7 +106,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ContactId");
 
-                    b.ToTable("Contacts", (string)null);
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Experience", b =>
@@ -131,7 +131,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ExperienceId");
 
-                    b.ToTable("Experiences", (string)null);
+                    b.ToTable("Experiences");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Feature", b =>
@@ -153,7 +153,41 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("FeatureId");
 
-                    b.ToTable("Features", (string)null);
+                    b.ToTable("Features");
+                });
+
+            modelBuilder.Entity("EntityLayer.Concrete.GenericMessage", b =>
+                {
+                    b.Property<int>("GenericMessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GenericMessageId"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Receiver")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReceiverName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("GenericMessageId");
+
+                    b.ToTable("GenericMessages");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Message", b =>
@@ -181,7 +215,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("MessageId");
 
-                    b.ToTable("Messages", (string)null);
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Portfolio", b =>
@@ -230,7 +264,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("PortfolioId");
 
-                    b.ToTable("Portfolios", (string)null);
+                    b.ToTable("Portfolios");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.ReUser", b =>
@@ -359,7 +393,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("ServiceId");
 
-                    b.ToTable("Services", (string)null);
+                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Skill", b =>
@@ -378,7 +412,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("SkillId");
 
-                    b.ToTable("Skills", (string)null);
+                    b.ToTable("Skills");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.SocialMedia", b =>
@@ -403,7 +437,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("SocialMediaId");
 
-                    b.ToTable("SocialMedias", (string)null);
+                    b.ToTable("SocialMedias");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.Testimonial", b =>
@@ -431,7 +465,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("TestimonialId");
 
-                    b.ToTable("Testimonials", (string)null);
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("EntityLayer.Concrete.TodoList", b =>
@@ -450,71 +484,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("TodoId");
 
-                    b.ToTable("TodoLists", (string)null);
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Mail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Surname")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("Users", (string)null);
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.UserMessage", b =>
-                {
-                    b.Property<int>("MessageId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MessageId"), 1L, 1);
-
-                    b.Property<string>("Content")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("MessageId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserMessages", (string)null);
+                    b.ToTable("TodoLists");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -620,17 +590,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("EntityLayer.Concrete.UserMessage", b =>
-                {
-                    b.HasOne("EntityLayer.Concrete.User", "User")
-                        .WithMany("UserMessages")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.ReUserRole", null)
@@ -680,11 +639,6 @@ namespace DataAccessLayer.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("EntityLayer.Concrete.User", b =>
-                {
-                    b.Navigation("UserMessages");
                 });
 #pragma warning restore 612, 618
         }

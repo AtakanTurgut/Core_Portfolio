@@ -1,0 +1,29 @@
+﻿@model EntityLayer.Concrete.GenericMessage
+
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yeni Mesaj Oluştur</h3>
+    <br />
+    <form class="form-group" method="post">
+        @Html.HiddenFor(x => x.GenericMessageId)
+
+        @Html.Label("Alıcı Mail")
+        @Html.TextBoxFor(x => x.Receiver, new { @class = "form-control" })
+        <br />
+        @Html.Label("Konu")
+        @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+        <br />
+        @Html.Label("Mesaj İçeriği")
+        @Html.TextAreaFor(x => x.Content, 10, 5, new { @class = "form-control" })
+        <br />
+
+        <a href="/User/Message/SenderMessage" class="btn btn-primary">Gönderilen Mesajlar</a>
+        <button class="btn btn-success">Gönder</button>
+    </form>
+</div>
+
+

@@ -43,5 +43,9 @@ namespace BusinessLayer.Concrete
             return _aboutDal.GetList();
         }
 
+        public List<About> TGetListByFilter()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

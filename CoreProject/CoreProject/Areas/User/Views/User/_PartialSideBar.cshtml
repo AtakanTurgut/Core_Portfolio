@@ -8,14 +8,14 @@
                     <i class="ni ni-tv-2 text-primary"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
-                <a class="nav-link active" asp-controller="User" asp-action="Message">
-                    <i class="ni ni-tv-2 text-primary"></i>
+                <a class="nav-link active" asp-controller="User" asp-action="Default">
+                    <i class="ni ni-email-83 text-primary"></i>
                     <span class="nav-link-text">Mesajlar</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" asp-controller="User" asp-action="Profile">
-                    <i class="ni ni-single-02 text-yellow"></i>
+                    <i class="ni ni-circle-08 text-yellow"></i>
                     <span class="nav-link-text">Profil</span>
                 </a>
             </li>
@@ -25,16 +25,33 @@
                     <span class="nav-link-text">Duyurular</span>
                 </a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link active" href="/User/Message/SenderMessage">
+                    <i class="ni ni-send text-info"></i>
+                    <span class="nav-link-text">Gönderilen Mesajlar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/User/Message/ReceiverMessage">
+                    <i class="ni ni-bell-55 text-pink"></i>
+                    <span class="nav-link-text">Gelen Mesajlar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/User/Message/SendMessage">
+                    <i class="ni ni-delivery-fast text-success"></i>
+                    <span class="nav-link-text">Yeni Mesaj</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="profile.html">
-                    <i class="ni ni-single-02 text-yellow"></i>
+                    <i class="ni ni-settings-gear-65 text-dark"></i>
                     <span class="nav-link-text">Ayarlar</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="upgrade.html">
-                    <i class="ni ni-send text-dark"></i>
+                    <i class="ni ni-lock-circle-open text-dark"></i>
                     <span class="nav-link-text">Oturumu Kapat</span>
                 </a>
             </li>

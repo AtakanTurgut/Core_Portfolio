@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IUserMessageDal : IGenericDal<UserMessage>
+    public interface IGenericMessageDal : IGenericDal<GenericMessage>
     {
-        public List<UserMessage> GetUserMessagesWithUser();
     }
 }

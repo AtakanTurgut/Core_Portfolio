@@ -23,11 +23,11 @@
                         @Html.Label("Duyuru No")
                         <br />
 
-                        @Html.TextBoxFor(x => x.AnnouncementId)
+                        @Html.TextBoxFor(x => x.AnnouncementId, new { @class = "form-control" })
                         <br />
                         @Html.Label("Başlık   ")
                         <br />
-                        @Html.TextBoxFor(x => x.Title)
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
                         <br />
                         @Html.Label("İçerik")
                         @Html.TextAreaFor(x => x.Content, 10, 5, new { @class = "form-control" })

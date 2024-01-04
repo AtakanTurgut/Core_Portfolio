@@ -38,6 +38,11 @@ namespace BusinessLayer.Concrete
             return _todoListDal.GetList();
         }
 
+        public List<TodoList> TGetListByFilter()
+        {
+            throw new NotImplementedException();
+        }
+
         public void TUpdate(TodoList item)
         {
             _todoListDal.Update(item);
