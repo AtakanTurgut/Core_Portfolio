@@ -1,0 +1,52 @@
+﻿@using EntityLayer.Concrete
+@model List<Announcement>
+
+@{
+    string color = "";
+}
+
+<div class="px-3 py-3">
+    <h6 class="text-sm text-muted m-0"><strong class="text-primary">Bildirimler...</strong></h6>
+</div>
+<!-- List group -->
+<div class="list-group list-group-flush">
+
+    @foreach (var item in Model)
+    {
+        @if (item.Status == "Yazı")
+        {
+            color = "btn btn-warning text-white btn-sm text-right text-muted";
+        }
+        @if (item.Status == "Proje")
+        {
+            color = "btn btn-success text-white btn-sm text-right text-muted";
+        }
+        @if (item.Status == "Konferans")
+        {
+            color = "btn btn-info text-white btn-sm text-right text-muted";
+        }
+        @if (item.Status == "Eğitim")
+        {
+            color = "btn btn-danger text-white btn-sm text-right text-muted";
+        }
+
+        <a href="/User/Default/AnnouncementDetails/@item.AnnouncementId" class="list-group-item list-group-item-action">
+            <div class="row align-items-center">
+                <div class="col ml--2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h4 class="mb-0 text-sm">@item.Title</h4>
+                        </div>
+                        <div class="@color">
+                            @item.Status
+                        </div>
+                    </div>
+                    <p class="text-sm mb-0">@item.Content</p>
+                </div>
+            </div>
+        </a>
+    }
+
+</div>
+
+<a asp-controller="User" asp-action="Default" class="dropdown-item text-center text-primary font-weight-bold py-3">Hepsini Gör</a>
