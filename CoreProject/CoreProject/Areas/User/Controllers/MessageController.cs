@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CoreProject.Areas.User.Controllers
 {
     [Area("User")]
+    //[Route("User/[controller]/[action]")]
     public class MessageController : Controller
     {
         GenericMessageManager genericMessageManager = new GenericMessageManager(new EfGenericMessageDal());
@@ -87,9 +89,18 @@ namespace CoreProject.Areas.User.Controllers
             message.Sender = mail;
             message.SenderName = name;
 
+            Context context = new Context();
+            var userNameSurname = context.Users
+                .Where(u => u.Email == message.Receiver)
+                .Select(u => u.Name + " " + u.Surname)
+                .FirstOrDefault();
+
+            message.ReceiverName = userNameSurname;
+
             genericMessageManager.TAdd(message);
 
             return Redirect("/User/Message/SenderMessage");
+            //return RedirectToAction("SenderMessage");
         }
 
         // DELETE
@@ -99,6 +110,7 @@ namespace CoreProject.Areas.User.Controllers
             genericMessageManager.TDelete(value);
 
             return Redirect("/User/Message/ReceiverMessage");
+            //return RedirectToAction("ReceiverMessage");
         }
 
         public IActionResult DeleteSenderMessage(int id)
@@ -107,6 +119,7 @@ namespace CoreProject.Areas.User.Controllers
             genericMessageManager.TDelete(value);
 
             return Redirect("/User/Message/SenderMessage");
+            //return RedirectToAction("SenderMessage");
         }
 
     }

@@ -10,7 +10,7 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Tarih</h5>
-                                    <span class="h2 font-weight-bold mb-0">@DateTime.Now.ToShortDateString()</span>
+                                    <span class="h2 font-weight-bold mb-0">@DateTime.Now.ToString("dd-MM-yyyy ") &nbsp; @DateTime.Now.ToString("HH:mm:ss")</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -45,7 +45,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0"><a>Mesajlar</a></h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0"><a href="/User/Message/ReceiverMessage">Mesajlar</a></h5>
                                     <span class="h2 font-weight-bold mb-0">@ViewBag.Message</span>
                                 </div>
                                 <div class="col-auto">
@@ -63,7 +63,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Duyurular</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0"><a asp-controller="User" asp-action="Default">Duyurular</a></h5>
                                     <span class="h2 font-weight-bold mb-0">@ViewBag.Anno</span>
                                 </div>
                                 <div class="col-auto">

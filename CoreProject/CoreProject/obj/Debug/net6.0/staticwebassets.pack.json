@@ -12425,8 +12425,40 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\25634a85-4362-407c-88e8-81cc1ffa88e2.jpg",
+      "PackagePath": "staticwebassets\\userImage\\25634a85-4362-407c-88e8-81cc1ffa88e2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\2593114e-695b-4618-a165-526a916c3d59.jpg",
+      "PackagePath": "staticwebassets\\userImage\\2593114e-695b-4618-a165-526a916c3d59.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\266e5abb-a4e5-4cb7-8f2f-1b89139e14d1.png",
+      "PackagePath": "staticwebassets\\userImage\\266e5abb-a4e5-4cb7-8f2f-1b89139e14d1.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\3635c8d8-a1d6-420b-a65c-788c11f99c36.jpg",
+      "PackagePath": "staticwebassets\\userImage\\3635c8d8-a1d6-420b-a65c-788c11f99c36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\38b371a5-47bc-4fad-9a67-9b653d2089a8.png",
+      "PackagePath": "staticwebassets\\userImage\\38b371a5-47bc-4fad-9a67-9b653d2089a8.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\6b0207e2-fc0d-4622-b871-3bcc70c454b6.jpg",
+      "PackagePath": "staticwebassets\\userImage\\6b0207e2-fc0d-4622-b871-3bcc70c454b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\9b1f35d9-991d-453e-a2af-810dc39898da.jpg",
+      "PackagePath": "staticwebassets\\userImage\\9b1f35d9-991d-453e-a2af-810dc39898da.jpg"
+    },
+    {
       "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\9e568a59-543f-4ccc-838c-b247546f0560.png",
       "PackagePath": "staticwebassets\\userImage\\9e568a59-543f-4ccc-838c-b247546f0560.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\CoreProject\\CoreProject\\CoreProject\\wwwroot\\userImage\\bcf7620f-ae51-4bce-a099-ed1f0663a9fd.jpg",
+      "PackagePath": "staticwebassets\\userImage\\bcf7620f-ae51-4bce-a099-ed1f0663a9fd.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CoreProject.Microsoft.AspNetCore.StaticWebAssets.props",

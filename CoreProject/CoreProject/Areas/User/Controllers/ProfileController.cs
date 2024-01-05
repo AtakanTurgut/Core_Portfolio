@@ -69,5 +69,24 @@ namespace CoreProject.Areas.User.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(UserEditViewModel model)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            // Change Password
+            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, model.Password);
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Login", "User");
+            }
+
+            return View();
+        }
+
     }
 }

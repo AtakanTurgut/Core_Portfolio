@@ -43,5 +43,14 @@ namespace CoreProject.Areas.User.Controllers
 
             return View();
         }
+
+        // GET
+        [HttpGet]
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+
+            return RedirectToAction("Login", "User");
+        }
     }
 }
