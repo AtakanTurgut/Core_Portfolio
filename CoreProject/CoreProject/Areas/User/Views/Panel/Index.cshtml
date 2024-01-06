@@ -6,8 +6,11 @@
 
 @await Component.InvokeAsync("UserFeatureStatistics")
 
-<div class="col-xl-8 order-xl-2">
-</div>
-<div class="col-xl-4 order-xl-2">
-    @await Component.InvokeAsync("UserProfileCard")
+<div class="row">
+    <div class="col-xl-8 order-xl-2">
+        @await Component.InvokeAsync("LastAnnouncement")
+    </div>
+    <div class="col-xl-4 order-xl-2">
+        @await Component.InvokeAsync("UserProfileCard")
+    </div>
 </div>

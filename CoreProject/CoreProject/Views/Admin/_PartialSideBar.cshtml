@@ -4,6 +4,12 @@
         <!-- Nav items -->
         <ul class="navbar-nav">
             <li class="nav-item">
+                <a class="nav-link" target="_blank" asp-controller="Default" asp-action="Index">
+                    <i class="ni ni-building text-dark"></i>
+                    <span class="nav-link-text">Ana Sayfa</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" asp-controller="Dashboard" asp-action="Index">
                     <i class="ni ni-tv-2 text-primary"></i>
                     <span class="nav-link-text">Dashboard</span>
@@ -64,15 +70,28 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" target="_blank" href="/User/Message/SendMessage">
-                    <i class="ni ni-delivery-fast text-success"></i>
-                    <span class="nav-link-text">Yeni Mesaj</span>
+                <a class="nav-link" asp-controller="Contact" asp-action="Index">
+                    <i class="ni ni-world text-primary"></i>
+                    <span class="nav-link-text">İletişim</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="ni ni-chart-pie-35 text-info"></i>
-                    <span class="nav-link-text">İstatistikler</span>
+                <a class="nav-link" asp-controller="AdminMessage" asp-action="SenderMessageList">
+                    <i class="ni ni-send text-info"></i>
+                    <span class="nav-link-text">Gönderilen Mesajlar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="AdminMessage" asp-action="ReceiverMessageList">
+                    <i class="ni ni-bell-55 text-pink"></i>
+                    <span class="nav-link-text">Gelen Mesajlar</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" asp-controller="AdminMessage" asp-action="SendMessage">
+                    <i class="ni ni-delivery-fast text-success"></i>
+                    <span class="nav-link-text">Yeni Mesaj</span>
                 </a>
             </li>
             <li class="nav-item">

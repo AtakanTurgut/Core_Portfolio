@@ -1,0 +1,57 @@
+﻿@using EntityLayer.Concrete
+@model List<GenericMessage>
+
+@{
+    ViewData["Title"] = "ReceiverMessageList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Gelen Kutusu</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name">#</th>
+                <th scope="col" class="sort" data-sort="budget">Gönderen</th>
+                <th scope="col" class="sort" data-sort="budget">Gönderen Mail</th>
+                <th scope="col" class="sort" data-sort="budget">Konu</th>
+                <th scope="col" class="sort" data-sort="name">Tarih</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">
+                        @item.GenericMessageId
+                    </th>
+                    <td class="budget">
+                        @item.SenderName
+                    </td>
+                    <td class="budget">
+                        @item.Sender
+                    </td>
+                    <td class="budget">
+                        @item.Subject
+                    </td>
+                    <td>
+                        @(((DateTime)@item.Date).ToString("dd-MM-yyyy"))
+                    </td>
+                    <td>
+                        <a href="/AdminMessage/ReceiverMessageDetails/@item.GenericMessageId" class="btn btn-primary"> Mesajı Gör</a>
+                        <a href="/AdminMessage/DeleteReceiverMessage/@item.GenericMessageId" class="btn btn-danger"> Mesajı Sil</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <a href="/AdminMessage/SendMessage" class="btn btn-success">Yeni Mesaj</a>
+</div>
+
+
+

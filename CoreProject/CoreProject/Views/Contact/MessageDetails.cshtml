@@ -1,0 +1,46 @@
+﻿@model EntityLayer.Concrete.Message
+
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Mesaj Detayı</h3>
+</div>
+<!-- Light table -->
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="name"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+            <tr>
+                <td scope="row">
+                    <form class="form-group" method="get">
+                        @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+                        @Html.Label("Mesaj No")
+                        <br />
+                        @Html.TextBoxFor(x => x.MessageId, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Gönderen Adı")
+                        <br />
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("Mail")
+                        <br />
+                        @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                        <br />
+                        @Html.Label("İçerik")
+                        @Html.TextAreaFor(x => x.Content, 10, 5, new { @class = "form-control" })
+                        <br />
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <a asp-controller="Contact" asp-action="Index" class="btn btn-primary mt--5">Mesaj Listesi</a>
+</div>
+
