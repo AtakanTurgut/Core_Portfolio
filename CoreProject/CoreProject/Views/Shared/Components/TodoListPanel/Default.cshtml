@@ -40,8 +40,10 @@
                         <td class="budget">
                             @using (Html.BeginForm("EditTodoList", "TodoList", FormMethod.Post))
                             {
-                                @Html.HiddenFor(modelItem => @item.TodoId)
-                                @Html.CheckBoxFor(modelItem => @item.Status, new { @class = "form-control", @id = "@item.TodoId" })
+                                <form class="form-group">
+                                    @Html.HiddenFor(modelItem => @item.TodoId)
+                                    @Html.CheckBoxFor(modelItem => @item.Status, new { @class = "form-control", @id = "@item.TodoId" })
+                                </form>
                             }
                         </td>
                         <td>

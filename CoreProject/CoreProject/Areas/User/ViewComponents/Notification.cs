@@ -10,7 +10,7 @@ namespace CoreProject.Areas.User.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var values = announcementManager.TGetList().Take(4).ToList();
+            var values = announcementManager.TGetList().TakeLast(4).ToList();
 
             return View(values);
         }

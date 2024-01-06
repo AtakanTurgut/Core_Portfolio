@@ -5,7 +5,7 @@
     string color = "";
 }
 
-<div class="px-3 py-3">
+<div href="#" class="px-3 py-3">
     <h6 class="text-sm text-muted m-0"><strong class="text-primary">Bildirimler...</strong></h6>
 </div>
 <!-- List group -->
@@ -29,7 +29,10 @@
         {
             color = "btn btn-danger text-white btn-sm text-right text-muted";
         }
-
+        @if (item.Status == "İlan")
+        {
+            color = "btn btn-secondary text-dark btn-sm text-right text-muted";
+        }
         <a href="/User/Default/AnnouncementDetails/@item.AnnouncementId" class="list-group-item list-group-item-action">
             <div class="row align-items-center">
                 <div class="col ml--2">
@@ -49,4 +52,4 @@
 
 </div>
 
-<a asp-controller="User" asp-action="Default" class="dropdown-item text-center text-primary font-weight-bold py-3">Hepsini Gör</a>
+<a asp-controller="User" asp-action="Default" target="_blank" class="dropdown-item text-center text-primary font-weight-bold py-3">Hepsini Gör</a>

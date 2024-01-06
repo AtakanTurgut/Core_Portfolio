@@ -12,7 +12,7 @@ namespace CoreProject.ViewComponents.Dashboard
 
         public IViewComponentResult Invoke()
         {
-            var values = todoListManager.TGetList().TakeLast(7).ToList();
+            var values = todoListManager.TGetList().TakeLast(5).ToList();
             ViewBag.td = context.TodoLists.Count();
 
             return View(values);

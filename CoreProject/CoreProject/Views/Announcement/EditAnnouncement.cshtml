@@ -1,0 +1,29 @@
+﻿@model EntityLayer.Concrete.Announcement
+
+@{
+    ViewData["Title"] = "EditAnnouncement";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Duyuru Düzenle</h3>
+    <br />
+    @using (Html.BeginForm("EditAnnouncement", "Announcement", FormMethod.Post))
+    {
+        @Html.HiddenFor(a => a.AnnouncementId)
+
+        @Html.Label("Başlık")
+        @Html.TextBoxFor(a => a.Title, new { @class = "form-control" })
+        <br />
+        <label for="Status">Tür</label>
+        @Html.TextBoxFor(a => a.Status, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextAreaFor(a => a.Content, 10, 3, new { @class = "form-control" })
+        <br />
+
+        <a asp-controller="Announcement" asp-action="Index" class="btn btn-primary">Liste</a>
+        <button class="btn btn-success">Güncelle</button>
+    }
+</div>
+

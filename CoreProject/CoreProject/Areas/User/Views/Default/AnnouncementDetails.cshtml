@@ -22,7 +22,8 @@
                     <form class="form-group">
                         @Html.Label("Duyuru No")
                         <br />
-
+                        @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+                        <br />
                         @Html.TextBoxFor(x => x.AnnouncementId, new { @class = "form-control" })
                         <br />
                         @Html.Label("Başlık   ")

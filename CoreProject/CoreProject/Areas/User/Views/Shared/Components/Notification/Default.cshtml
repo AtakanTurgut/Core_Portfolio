@@ -29,6 +29,10 @@
         {
             color = "btn btn-danger text-white btn-sm text-right text-muted";
         }
+        @if (item.Status == "İlan")
+        {
+            color = "btn btn-secondary text-dark btn-sm text-right text-muted";
+        }
 
         <a href="/User/Default/AnnouncementDetails/@item.AnnouncementId" class="list-group-item list-group-item-action">
             <div class="row align-items-center">

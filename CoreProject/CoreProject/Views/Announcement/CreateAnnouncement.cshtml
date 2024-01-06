@@ -1,0 +1,31 @@
+﻿@model EntityLayer.Concrete.Announcement
+
+@{
+    ViewData["Title"] = "CreateAnnouncement";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Duyuru Ekle</h3>
+    <br />
+    <form class="form-group" method="post">
+        <label>Başlık</label>
+        <input type="text" name="Title" class="form-control" />
+        <br />
+        <label for="Status">Durum Seçin</label>
+        <select id="Status" name="Status">
+            <option value="Yazı">Yazı</option>
+            <option value="Proje">Proje</option>
+            <option value="Konferans">Konferans</option>
+            <option value="Eğitim">Eğitim</option>
+            <option value="İlan">İlan</option>
+        </select>
+        <br />
+        <label>İçerik</label>
+        @Html.TextAreaFor(e => e.Content, 10, 3, new { @class = "form-control" })
+        <br />
+        <a asp-controller="Announcement" asp-action="Index" class="btn btn-primary">Liste</a>
+        <button class="btn btn-success">Ekle</button>
+    </form>
+</div>
+

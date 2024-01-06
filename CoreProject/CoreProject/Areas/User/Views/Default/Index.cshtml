@@ -45,6 +45,10 @@
                 {
                     color = "btn btn-danger text-white btn-sm";
                 }
+                @if (item.Status == "İlan")
+                {
+                    color = "btn btn-secondary text-dark btn-sm";
+                }
                 <tr>
                     <th scope="row">
                         @item.AnnouncementId
