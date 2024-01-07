@@ -1,12 +1,16 @@
 ﻿using BusinessLayer.Concrete;
+using CoreProject.Areas.User.Models;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreProject.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminMessageController : Controller
     {
         GenericMessageManager genericMessageManager = new GenericMessageManager(new EfGenericMessageDal());
@@ -25,6 +29,8 @@ namespace CoreProject.Controllers
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             param = values.Email;
 
+            //ViewBag.ImageUrl = values.ImageUrl;
+
             var messageList = genericMessageManager.GetListReceiverMessage(param);
 
             return View(messageList);
@@ -37,6 +43,8 @@ namespace CoreProject.Controllers
 
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             param = values.Email;
+
+            //ViewBag.ImageUrl = values.ImageUrl;
 
             var messageList = genericMessageManager.GetListSenderMessage(param);
 

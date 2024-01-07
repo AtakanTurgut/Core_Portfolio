@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreProject.Areas.User.Controllers
 {
+    [AllowAnonymous]
     [Area("User")]
     public class LoginController : Controller
     {

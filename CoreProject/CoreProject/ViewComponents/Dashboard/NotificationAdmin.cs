@@ -10,7 +10,7 @@ namespace CoreProject.ViewComponents.Dashboard
 
         public IViewComponentResult Invoke()
         {
-            var values = announcementManager.TGetList().TakeLast(4).ToList();
+            var values = announcementManager.TGetList().OrderByDescending(a => a.AnnouncementId).Take(4).ToList();
 
             return View(values);
         }

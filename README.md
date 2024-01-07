@@ -17,7 +17,7 @@ User Page   =  https://localhost:7015/User/Panel
 ```
 
 # Used Packages for Project
-EntityLayer:
+EntityLayer
 ```cs
 https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25
 https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.25

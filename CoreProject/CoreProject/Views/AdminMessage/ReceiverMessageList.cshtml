@@ -29,9 +29,16 @@
                     <th scope="row">
                         @item.GenericMessageId
                     </th>
-                    <td class="budget">
-                        @item.SenderName
-                    </td>
+                    <th scope="row">
+                        <div class="media align-items-center">
+                            <a class="avatar rounded-circle mr-3">
+                                <img src="~/userImage/@ViewBag.ImageUrl">
+                            </a>
+                            <div class="media-body">
+                                <span class="name mb-0 text-sm">@item.SenderName</span>
+                            </div>
+                        </div>
+                    </th>
                     <td class="budget">
                         @item.Sender
                     </td>
