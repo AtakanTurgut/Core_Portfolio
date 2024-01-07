@@ -23,13 +23,13 @@ namespace CoreProject.Controllers
         }
 
         [HttpGet]
-        public PartialViewResult SendMessage() 
+        public ActionResult SendMessage() 
         {
-            return PartialView();
+            return Redirect("/Default/#contact");
         }
 
         [HttpPost]
-        public PartialViewResult SendMessage(Message m)
+        public ActionResult SendMessage(Message m)
         {
             MessageManager messageManager = new MessageManager(new EfMessageDal());
 
@@ -38,7 +38,7 @@ namespace CoreProject.Controllers
 
             messageManager.TAdd(m);
 
-            return PartialView();
+            return Redirect("/Default/#contact");
         }
 
     }

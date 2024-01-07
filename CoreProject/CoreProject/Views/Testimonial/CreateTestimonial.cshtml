@@ -1,0 +1,44 @@
+﻿@model EntityLayer.Concrete.Testimonial
+
+@{
+    ViewData["Title"] = "CreateTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Referans Ekle</h3>
+            </div>
+            <br />
+            <div class="container">
+                @using (Html.BeginForm("CreateTestimonial", "Testimonial", FormMethod.Post))
+                {
+                    @Html.HiddenFor(a => a.TestimonialId)
+
+                    @Html.Label("Resim")
+                    @Html.TextBoxFor(a => a.ImageUrl, new { @class = "form-control" })
+                    <br />
+                    <label>Ad Soyad</label>
+                    @Html.TextBoxFor(a => a.Name, new { @class = "form-control" })
+                    <br />
+                    <label>Şirket</label>
+                    @Html.TextBoxFor(a => a.Company, new { @class = "form-control" })
+                    <br />
+                    <label>Ünvan</label>
+                    @Html.TextBoxFor(a => a.Title, new { @class = "form-control" })
+                    <br />
+                    <label>Yorum</label>
+                    @Html.TextAreaFor(a => a.Comment, 8, 3, new { @class = "form-control" })
+                    <br />
+
+                    <a asp-controller="Testimonial" asp-action="Index" class="btn btn-primary">Liste</a>
+                    <button class="btn btn-success">Ekle</button>
+                }
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+

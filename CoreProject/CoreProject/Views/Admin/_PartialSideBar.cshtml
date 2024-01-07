@@ -34,6 +34,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" asp-controller="SocialMedia" asp-action="Index">
+                    <i class="ni ni-tablet-button text-orange"></i>
+                    <span class="nav-link-text">Sosyal Medya</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" asp-controller="Service" asp-action="Index">
                     <i class="ni ni-bullet-list-67 text-default"></i>
                     <span class="nav-link-text">Hizmetler</span>
@@ -58,7 +64,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="upgrade.html">
+                <a class="nav-link" asp-controller="Testimonial" asp-action="Index">
                     <i class="ni ni-spaceship text-dark"></i>
                     <span class="nav-link-text">Referanslar</span>
                 </a>
@@ -76,6 +82,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" asp-controller="ContactSub" asp-action="Index">
+                    <i class="ni ni-credit-card text-success"></i>
+                    <span class="nav-link-text">İletişim Bilgileri</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" asp-controller="AdminMessage" asp-action="SenderMessageList">
                     <i class="ni ni-send text-info"></i>
                     <span class="nav-link-text">Gönderilen Mesajlar</span>
@@ -85,19 +97,6 @@
                 <a class="nav-link" asp-controller="AdminMessage" asp-action="ReceiverMessageList">
                     <i class="ni ni-bell-55 text-pink"></i>
                     <span class="nav-link-text">Gelen Mesajlar</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link active" asp-controller="AdminMessage" asp-action="SendMessage">
-                    <i class="ni ni-delivery-fast text-success"></i>
-                    <span class="nav-link-text">Yeni Mesaj</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="User" asp-action="Profile" target="_blank">
-                    <i class="ni ni-settings-gear-65 text-dark"></i>
-                    <span class="nav-link-text">Ayarlar</span>
                 </a>
             </li>
             <li class="nav-item">

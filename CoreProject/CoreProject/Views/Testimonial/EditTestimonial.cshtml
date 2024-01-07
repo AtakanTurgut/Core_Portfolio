@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concrete.Testimonial
+
+@{
+    ViewData["Title"] = "EditTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Referans Güncelle</h3>
+            </div>
+            <br />
+            <div class="container">
+                @using (Html.BeginForm("EditTestimonial", "Testimonial", FormMethod.Post))
+                {
+                    @Html.HiddenFor(p => p.TestimonialId)
+
+                    <label class="text-white">Referans Id</label>
+                    @Html.TextBoxFor(p => p.TestimonialId, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Resim</label>
+                    @Html.TextBoxFor(p => p.ImageUrl, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Ad Soyad</label>
+                    @Html.TextBoxFor(p => p.Name, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Şirket</label>
+                    @Html.TextBoxFor(p => p.Company, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Ünvan</label>
+                    @Html.TextBoxFor(p => p.Title, new { @class = "form-control" })
+                    <br />
+                    <label class="text-white">Yorum</label>
+                    @Html.TextAreaFor(a => a.Comment, 8, 3, new { @class = "form-control" })
+                    <br />
+                    <a asp-controller="Testimonial" asp-action="Index" class="btn btn-primary">Liste</a>
+                    <button class="btn btn-success">Güncelle</button>
+                    <br />
+                }
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+

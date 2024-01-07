@@ -32,7 +32,7 @@
                     </div>
                     <div class="row">
                         @*@await Component.InvokeAsync("SendMessage")*@
-                        @await Html.PartialAsync("/Views/Default/_SendMessage.cshtml")
+                        @await Html.PartialAsync("/Views/Default/SendMessage.cshtml")
 
                         @await Component.InvokeAsync("ContactDetails")
                     </div>
@@ -42,19 +42,8 @@
             <footer class="pt-4 pb-4 text-center bg-light">
                 <div class="container">
                     <div class="my-3">
-                        <div class="h4">Atakan Turgut</div>
-                        <p>Bilgisayar Mühendisi & Full Stack .Net Developer</p>
-                        <div class="social-nav">
-                            <nav role="navigation">
-                                <ul class="nav justify-content-center">
-                                    <li class="nav-item"><a target="_blank" class="nav-link" href="https://twitter.com/Atakan_Turgut20" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
-                                    <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCb8KQ--HfxSVsW8m8T0DUWg" title="Youtube"><i class="fab fa-youtube"></i><span class="menu-title sr-only">YouTube</span></a></li>
-                                    <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.instagram.com/atkn.trgt" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-                                    <li class="nav-item"><a target="_blank" class="nav-link" href="https://www.linkedin.com/in/atakanturgut/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                                    <li class="nav-item"><a target="_blank" class="nav-link" href="https://github.com/AtakanTurgut" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        @await Component.InvokeAsync("SubFeatureList")
+                        
                     </div>
                     <div class="text-small text-secondary">
                         <div class="mb-1">&copy; AtakanTurgut</div>

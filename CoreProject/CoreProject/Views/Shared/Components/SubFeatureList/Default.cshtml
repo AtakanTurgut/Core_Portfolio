@@ -1,0 +1,18 @@
+﻿@using EntityLayer.Concrete
+@model List<Feature>
+
+<div class="container text-center">
+    @foreach (var item in Model)
+    {
+        <div class="h4">@item.Name</div>
+        <p>@item.Title</p>
+    }
+
+    <nav class="social-nav navbar navbar-expand-lg">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                @await Component.InvokeAsync("SocialMediaList")
+            </ul>
+        </div>
+    </nav>
+</div>
