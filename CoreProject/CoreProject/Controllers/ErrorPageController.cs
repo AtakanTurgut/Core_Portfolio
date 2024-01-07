@@ -4,9 +4,15 @@ namespace CoreProject.Controllers
 {
     public class ErrorPageController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Unauthorized()
+        {
+            return View();
+        }
+
+        public IActionResult NotFound()
         {
             return View();
         }
     }
 }
+  
