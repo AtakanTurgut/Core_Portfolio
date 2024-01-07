@@ -10,41 +10,44 @@ CoreProject     => EntityLayer + DataAccessLayer + BusinessLayer
 ```
 
 # Used Packages for Project
-```c#
-EntityLayer
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0
-    https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
+EntityLayer:
+```cs
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
 ```
-```c#
+
 DataAccessLayer
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0	
-	https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
+```cs
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0	
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
 ```
-```c#
+
 BusinessLayer
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
-	- https://www.nuget.org/packages/FluentValidation.AspNetCore/11.3.0?_src=template
+```cs
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
+- https://www.nuget.org/packages/FluentValidation.AspNetCore/11.3.0?_src=template
 ```
-```c#
+
 CoreProject
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
-	https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
-	- https://www.nuget.org/packages/FluentValidation.AspNetCore/11.3.0?_src=template
-	https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0	
-	https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
+```cs
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25?_src=template
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25?_src=template
+- https://www.nuget.org/packages/FluentValidation.AspNetCore/11.3.0?_src=template
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0	
+https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0?_src=template
 ```
 
 ## Addresses
