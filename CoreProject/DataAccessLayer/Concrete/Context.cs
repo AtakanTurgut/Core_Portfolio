@@ -15,7 +15,6 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server=DESKTOP-R6K64T9\\SQLEXPRESS;database=CoreProjectDb;integrated security=true");
-            //optionsBuilder.UseSqlServer("server=DESKTOP-R6K64T9\\SQLEXPRESS;database=CoreProjeDb;integrated security=true");
         }
 
         public DbSet<About> Abouts { get; set; }

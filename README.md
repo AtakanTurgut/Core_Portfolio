@@ -7,6 +7,8 @@ EntityLayer
 DataAccessLayer => EntityLayer
 BusinessLayer   => EntityLayer + DataAccessLayer
 CoreProject     => EntityLayer + DataAccessLayer + BusinessLayer 
+
+CoreProject_Api
 ```
 
 ## Addresses
@@ -55,6 +57,15 @@ https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25
 - https://www.nuget.org/packages/FluentValidation.AspNetCore/11.3.0
 https://www.nuget.org/packages/Microsoft.AspNetCore.Identity/2.2.0	
 https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0
+```
+
+CoreProject_Api
+```cs
+https://www.nuget.org/packages/Swashbuckle.Aspnetcore/6.5.0
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/6.0.25
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/8.0.0
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/6.0.25
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.25
 ```
 
 ### Migrations

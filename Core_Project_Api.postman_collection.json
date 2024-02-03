@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "fb997838-06d7-48fb-ab9e-8c63b1145d70",
+		"name": "Core_Project_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27907837",
+		"_collection_link": "https://solar-firefly-811735.postman.co/workspace/New-Team-Workspace~114675ca-fcb4-4258-bdbb-76363a002615/collection/27907837-fb997838-06d7-48fb-ab9e-8c63b1145d70?action=share&source=collection_link&creator=27907837"
+	},
+	"item": [
+		{
+			"name": "GetTodoList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7209/api/todolist"
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodoListById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:7209/api/todolist/5"
+			},
+			"response": []
+		},
+		{
+			"name": "TodoAdd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todoId\": 0,\r\n    \"content\": \"Yapılacak\",\r\n    \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7209/api/todolist"
+			},
+			"response": []
+		},
+		{
+			"name": "TodoUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"todoId\": 5,\r\n    \"content\": \"Güncel Deneme\",\r\n    \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:7209/api/todolist"
+			},
+			"response": []
+		},
+		{
+			"name": "TodoUpdate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7209/api/todolist?id=6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7209",
+					"path": [
+						"api",
+						"todolist"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6",
+							"description": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
